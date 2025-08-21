@@ -7,7 +7,7 @@ import { MdOutlineDoNotDisturbOff } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { MdShare } from "react-icons/md";
 import { Receipt } from "lucide-react";
-import { getOldPrice , getTotalReviews } from "../utils/calculation";
+import { getOldPrice, getTotalReviews } from "../utils/calculation";
 import ProductImageSlider from "./ProductImageSlider";
 import Rating from "./Rating";
 
@@ -22,9 +22,7 @@ const ProductDetail = ({ product }) => {
     setCount(count - 1);
   };
 
-
- const totalReviews = getTotalReviews(product.ratingBreakdown) ; 
-
+  const totalReviews = getTotalReviews(product.ratingBreakdown);
 
   return (
     <div className="w-full flex mt-[-5px]">
@@ -50,9 +48,9 @@ const ProductDetail = ({ product }) => {
               <Rating
                 rating={product.rating}
                 reviewsCount={totalReviews}
-                answersCount = "| 9 Answered Questions"
-                className = "w-3 h-3 fill-stars text-stars"
-                emptyStarStyle = "w-3 h-3 text-gray-300" 
+                answersCount="| 9 Answered Questions"
+                className="w-3 h-3 fill-stars text-stars"
+                emptyStarStyle="w-3 h-3 text-gray-300"
                 showRating
               />
             </div>
@@ -86,15 +84,6 @@ const ProductDetail = ({ product }) => {
           <span className="ms-1 text-[13px] text-black">
             -{product.discount}%
           </span>
-
-          {/* <p className="text-[12px] ms-1 text-center lg:text-start text-gray-500">
-            <del className="text-[14px] font-[400] leading-[16px] text-gray-400">
-              Rs.490
-            </del>
-            <span className="ms-1 text-black text-[14px] font-[400] leading-[16px]">
-              -66%
-            </span>
-          </p> */}
 
           <hr className="text-gray-200 mt-4" />
 
@@ -181,7 +170,7 @@ const ProductDetail = ({ product }) => {
                 {product.deliverOptions.delivery.type}
               </p>
               <p className="text-gray-400 leading-[24px] text-[11px]">
-                {product.deliverOptions.delivery.date}
+                Get by {product.deliverOptions.delivery.date}
               </p>
             </div>
             <p className="font-[500] text-[14px] cursor-pointer whitespace-nowrap">
@@ -224,7 +213,7 @@ const ProductDetail = ({ product }) => {
                 className="mr-[15px] text-gray-500"
               />
               <p className="font-[500] text-gray-700  text-[14px] leading-[16px]">
-                 {product.return.days}
+                {product.return.days}
               </p>
             </div>
             <div className="flex items-center py-3">
@@ -233,7 +222,7 @@ const ProductDetail = ({ product }) => {
                 className="mr-[15px] text-gray-500"
               />
               <p className="font-[500] text-gray-700  text-[14px] leading-[16px]">
-                  {product.return.warranty}
+                {product.return.warranty}
               </p>
             </div>
           </div>

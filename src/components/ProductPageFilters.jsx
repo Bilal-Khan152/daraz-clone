@@ -8,7 +8,7 @@ import ProductPageWarranty from "./ProductPageWarranty";
 import ProductPageSize from "./ProductPageSize";
 import ProductPageDelivery from "./ProductPageDelivery";
 
-const ProductPage_Sidebar = () => {
+const ProductPageFilters = () => {
   return (
     <>
       {" "}
@@ -35,4 +35,4 @@ const ProductPage_Sidebar = () => {
   );
 };
 
-export default ProductPage_Sidebar;
+export default ProductPageFilters;

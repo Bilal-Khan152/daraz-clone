@@ -7,6 +7,7 @@ import NavbarForProductPage from "./NavbarForProductPage";
 import MobileViewLinks from "./MobileViewLinks";
 import DesktopViewLinks from "./DesktopViewLinks";
 import NavLogoSearchCart from "./NavLogoSearchCart";
+import logo from "../assets/images/daraz.PK.png"
 
 const Navbar = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -64,7 +65,7 @@ const Navbar = () => {
         <img
           onClick={() => navigate("/")}
           className="w-[30%] h-auto cursor-pointer"
-          src="/daraz.PK.png"
+          src={logo}
           alt="Logo"
         />
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>

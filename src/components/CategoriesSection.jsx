@@ -8,7 +8,7 @@ const CategoriesSection = () => {
     item.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   const categories = filteredProducts.filter(
-    (item) => item.Categories === true
+    (item) => item.isCategories === true
   );
 
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const CategoriesSection = () => {
             className="cursor-pointer border border-gray-200 border-l-gray-50   hover:shadow-[0_0_5px_rgba(0,0,0,0.25)] transition-shadow duration-200 p-2"
           >
             <img
-              src={product.imageURL}
+              src={product.productImages[0]}
               className="w-full h-[100px] sm:h-[110px] md:h-[90px] object-contain mx-auto"
               alt=""
             />

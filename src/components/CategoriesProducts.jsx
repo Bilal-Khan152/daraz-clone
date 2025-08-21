@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProductPageSidebar from "./ProductPageSidebar";
+import ProductPageFilters from "./ProductPageFilters";
 import ProductPageMainSection from "./ProductPageMainSection";
 import { IoClose } from "react-icons/io5";
 
@@ -27,7 +27,7 @@ const CategoriesProducts = () => {
       </div>
 
       <div className="hidden md:flex sm:flex-row flex-col">
-        <ProductPageSidebar />
+        <ProductPageFilters />
         <ProductPageMainSection />
       </div>
 

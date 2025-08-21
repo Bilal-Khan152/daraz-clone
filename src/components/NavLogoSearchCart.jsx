@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { CiSearch } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 import { setSearchTerm } from "../Redux/Slices/searchSlice";
+import logo from "../assets/images/daraz.PK.png"
 
 const NavLogoSearchCart = ({ handleSearchBtn, hideDesktopLinks }) => {
   const searchTerm = useSelector((state) => state.search.term);
@@ -22,7 +23,7 @@ const NavLogoSearchCart = ({ handleSearchBtn, hideDesktopLinks }) => {
       <img
         onClick={() => navigate("/")}
         className="h-[40px] w-[127px] cursor-pointer relative left-[6px] top-1"
-        src="daraz.PK.png"
+        src={logo}
         alt="Logo"
       />
 

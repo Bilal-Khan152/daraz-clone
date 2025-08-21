@@ -20,7 +20,7 @@ const ProductPageMainSection = () => {
     item.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  let forYou = filteredProducts.filter((item) => item.forYou === true);
+  let forYou = filteredProducts.filter((item) => item.isForYou === true);
   const navigate = useNavigate();
 
   forYou = [...forYou].sort(sortingFunctions[sortOption]);
@@ -102,10 +102,10 @@ const ProductPageMainSection = () => {
                 key={product.id}
                 onClick={() => navigate(`/productDetails/${product.id}`)}
                 className={`cursor-pointer bg-white border-gray-200 rounded hover:shadow-[0_0_5px_rgba(0,0,0,0.25)] flex flex-col 
-      ${i >= 4 ? "mt-15.5" : ""}`}
+                ${i >= 4 ? "mt-15.5" : ""}`}
               >
                 <img
-                  src={product.imageURL}
+                  src={product.productImages[0]}
                   className="w-full h-[240px] object-cover"
                   alt=""
                 />

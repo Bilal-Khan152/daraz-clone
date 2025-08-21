@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const DarazLinks = () => {
   return (
     <div className="w-full   flex justify-center pb-6 md:pb-0">
@@ -86,11 +88,11 @@ const DarazLinks = () => {
           <img
             src="DarazLogo.png"
             className="w-[45px] h-[45px]"
-            alt="Daraz logo  "
+            alt="Daraz logo"
           />
           <p className="ms-[20px]">
             {" "}
-            <span className="font-normal textt-[16px] leading-[18.4px] text-[#f85606]">
+            <span className="font-normal textt-[16px] leading-[18.4px] text-brand">
               Happy Shopping
             </span>{" "}
             <br /> <span className="text-[#0f136d] text-[14px] font-[400] leading-[16.1px]">Download App</span>
