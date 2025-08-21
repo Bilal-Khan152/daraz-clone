@@ -1,0 +1,21 @@
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./assets/fonts/NotoSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-noto: NotoSans, sans-serif;
+  --color-brand : #f85606;
+  --color-stars : #FACA51;
+}
+
+@layer utilities {
+  .font-noto {
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+}
